@@ -1,0 +1,103 @@
+.contenedor-general {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contenedor-izquierdo {
+  padding-inline: 5rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contenedor-imagen {
+  background-image: url("../../../images/img-fondo.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+.texto-izquierdo-1 {
+  font-size: 2rem;
+  z-index: 1;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+
+.texto-izquierdo-2 {
+  font-size: 2rem;
+  z-index: 1;
+  font-weight: 800;
+  color: #4f4f4f;
+}
+
+.contenedor-derecho {
+  padding-inline: 5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-formulario {
+  width: 100%;
+}
+
+.texto-derecho {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.selectores {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem;
+}
+
+.labels {
+  font-weight: 500;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.selector-input {
+  height: 2rem;
+  border-radius: 100vh;
+  border: 2px solid #f2f2f2;
+  padding-left: 1.5rem;
+  color: #adadad;
+}
+
+.boton-submit {
+  width: 100%;
+  height: 2.3rem;
+  background-color: #1c4fd8;
+  border-radius: 100vh;
+  text-align: center;
+  font-weight: 500;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+.boton-submit:hover {
+  filter: opacity(0.9);
+}
+
+.link {
+  margin-top: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  color: #7993db;
+}
+
+.link:hover {
+  color: #1c4fd8;
+}

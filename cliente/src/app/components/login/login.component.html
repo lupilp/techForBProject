@@ -1,0 +1,55 @@
+<div class="contenedor-general">
+  <div class="contenedor-izquierdo">
+    <div class="contenedor-imagen"></div>
+    <div class="texto-izquierdo-1">¡Bienvenido!</div>
+
+    <div class="texto-izquierdo-2">Nos encanta tenerte aquí de nuevo</div>
+  </div>
+  <div class="contenedor-derecho">
+    <div class="texto-derecho">Crea tu cuenta</div>
+    <div class="contenedor-formulario">
+      <form (submit)="userLogin()">
+        <div class="selectores">
+          <label class="labels">Tipo de documento:</label>
+
+          <select
+            name="tipoDocumento"
+            [(ngModel)]="user.tipoDocumento"
+            class="selector-input"
+            placeholder="DNI"
+          >
+            <option value="DNI">DNI</option>
+            <option value="Pasaporte" selected>Pasaporte</option>
+          </select>
+        </div>
+
+        <div class="selectores">
+          <label class="labels">Numero de documento:</label>
+          <input
+            type="number"
+            name="numDocumento"
+            [(ngModel)]="user.numDocumento"
+            class="selector-input"
+            placeholder="20123456"
+          />
+        </div>
+
+        <div class="selectores">
+          <label class="labels">Contraseña:</label>
+          <input
+            type="password"
+            name="password"
+            [(ngModel)]="user.password"
+            class="selector-input"
+            placeholder="********"
+          />
+        </div>
+
+        <button type="submit" class="boton-submit">Ingresar</button>
+      </form>
+    </div>
+    <a routerLink="/register" class="link"
+      >¿No tienes cuenta? <b>Registrate</b></a
+    >
+  </div>
+</div>

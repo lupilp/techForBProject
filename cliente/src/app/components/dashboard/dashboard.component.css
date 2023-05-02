@@ -1,0 +1,250 @@
+.contenedor-supremo {
+  display: flex;
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 150vh;
+}
+
+.contenedor-general {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-left: 3rem;
+}
+
+/* Menu */
+
+.contenedor-menu {
+  height: 100%;
+  background-color: #ffffff;
+  width: 30%;
+  padding-top: 2rem;
+}
+
+.contenedor-opciones {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #252f69;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.opcion {
+  color: #adadad;
+  margin-block: 1.3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.opcion:hover {
+  color: #252f69;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.navbar-izquierda {
+  display: flex;
+  padding-left: 2.5rem;
+}
+
+.navbar-derecha {
+  display: flex;
+  align-items: center;
+  padding-right: 2.5rem;
+  gap: 0.5rem;
+}
+
+.searchbar {
+  padding-block: 0.5rem;
+  border-radius: 100vh;
+  border: 2px solid #f2f2f2;
+  padding-left: 1.5rem;
+  color: #adadad;
+  width: 40%;
+  background-color: #ffffff;
+}
+
+.menu {
+  color: #4f4f4f;
+  cursor: pointer;
+}
+
+.icono-bell {
+  border: 1px solid #4f4f4f;
+  color: #4f4f4f;
+  padding: 0.3rem 0.4rem;
+  border-radius: 100vh;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.icono-persona {
+  background-color: #ffffff;
+  padding: 0.3rem 0.4rem;
+  border-radius: 100vh;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+.name {
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.text-inicio {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  left: 10;
+}
+
+/* Tarjetas */
+
+.contenedor-tarjetas {
+  padding-top: 4rem;
+
+  display: flex;
+  gap: 1rem;
+  position: relative;
+
+  margin-bottom: 2rem;
+}
+
+.tarjeta {
+  background-color: #252f69;
+  width: 18rem;
+  height: 10rem;
+  border-radius: 2rem;
+  color: #ffffff;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarjeta-2 {
+  background-color: #ffffff;
+  width: 18rem;
+  height: 10rem;
+  border-radius: 2rem;
+  color: #ffffff;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-text {
+  font-size: 0.7rem;
+}
+
+.saldo-info {
+  font-size: 1.3rem;
+}
+
+.numero-info {
+  margin-left: 40%;
+  font-size: 1.2rem;
+}
+
+.contenedor-info-abajo {
+  display: flex;
+  gap: 1rem;
+}
+
+.info-tarjeta {
+  font-size: 1rem;
+}
+
+.texto-cbu {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.icono-cbu {
+  font-size: 10px;
+  color: #adadad;
+  cursor: pointer;
+}
+
+.contenedor-arriba {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circulo1 {
+  background-color: #ffffff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100vh;
+  position: relative;
+  filter: opacity(0.4);
+}
+
+.circulo2 {
+  background-color: #ffffff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100vh;
+  position: absolute;
+  filter: opacity(0.5);
+  right: 75%;
+}
+
+/* Transacciones */
+
+.contenedor-transacciones {
+  background-color: #ffffff;
+  width: 40%;
+  height: fit-content;
+  border-radius: 2rem;
+  padding-inline: 1.3rem;
+  padding-block: 1.3rem;
+}
+
+.texto-transacciones {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.linea-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0.5rem;
+}
+
+.transferencia {
+  font-size: 0.7rem;
+  color: #9595a7;
+}
+
+.info-transaccion {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.info-estado {
+  color: rgb(23, 216, 23);
+}
+
+/* Balance */

@@ -1,0 +1,23 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  height: 150vh;
+}
+
+input {
+  all: unset;
+}
+
+button {
+  all: unset;
+}
+
+a {
+  all: unset;
+}
+
+select {
+  all: calc();
+}

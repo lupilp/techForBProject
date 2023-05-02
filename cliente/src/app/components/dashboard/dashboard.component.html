@@ -1,0 +1,119 @@
+<div class="contenedor-supremo">
+  <!--MENU-->
+  <div class="contenedor-menu">
+    <div class="menu">
+      <div class="logo">LOGO</div>
+    </div>
+    <div class="contenedor-opciones">
+      <a class="opcion">Inicio</a>
+      <a class="opcion">Tarjetas</a>
+      <a class="opcion">Prestamos</a>
+      <a class="opcion">Pagar Servicios</a>
+      <a class="opcion">Operaciones</a>
+      <a class="opcion">Seguros</a>
+      <a class="opcion">Puntos</a>
+      <a class="opcion">Ayuda</a>
+      <a class="opcion" routerLink="/login">Cerrar sesión</a>
+    </div>
+  </div>
+
+  <div class="contenedor-general">
+    <!--NAVBAR-->
+
+    <div class="navbar">
+      <div class="navbar-izquierda"></div>
+      <div class="searchbar">
+        <input type="text" placeholder="Busca aquí..." />
+      </div>
+
+      <div class="navbar-derecha">
+        <div class="icono-bell">
+          <span class="material-symbols-outlined">notifications</span>
+        </div>
+        <div class="icono-persona">
+          <span class="material-symbols-outlined"> person </span>
+        </div>
+        <div class="name">{{ infoUser.name }}</div>
+      </div>
+    </div>
+
+    <!--TARJETAS-->
+
+    <div class="contenedor-tarjetas">
+      <div class="text-inicio">Inicio</div>
+      <div class="tarjeta" *ngFor="let info of tarjetas.tarjetas">
+        <div class="contenedor-arriba">
+          <div class="info-text">
+            Mi saldo
+            <div class="saldo-info">{{ info.miSaldo }}</div>
+          </div>
+          <div class="circulo1"><div class="circulo2"></div></div>
+        </div>
+        <div class="texto-cbu">
+          <div class="icono-cbu">
+            <span class="material-symbols-outlined"> share </span>
+          </div>
+          CBU/Alias
+        </div>
+
+        <div class="numero-info">
+          {{ info.numero }}
+        </div>
+
+        <div class="contenedor-info-abajo">
+          <div class="info-text">
+            Titular tarjeta
+            <div class="info-tarjeta">{{ info.nombre }}</div>
+          </div>
+
+          <div class="info-text">
+            Valida hasta
+            <div class="info-tarjeta">
+              {{ info.validaHasta }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta-2"></div>
+    </div>
+
+    <div class="contenedor-abajo">
+      <!--BALANCE-->
+
+      <div class="contenedor-balance"></div>
+
+      <!--TRANSACCIONES-->
+
+      <div class="contenedor-transacciones">
+        <div class="texto-transacciones">Ultimas transacciones</div>
+        <div
+          class="linea-info"
+          *ngFor="let info of transacciones.transacciones"
+        >
+          <div class="transferencia">
+            <div class="info-transaccion">
+              {{ info.nombre }}
+            </div>
+            Transferencia
+          </div>
+
+          <div class="info-transaccion">
+            {{ info.monto }}
+          </div>
+
+          <div class="transferencia">
+            <div class="info-transaccion">
+              {{ info.fecha }}
+            </div>
+            04:34:45 AM
+          </div>
+
+          <div class="info-estado">
+            {{ info.estado }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
