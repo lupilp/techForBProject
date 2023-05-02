@@ -1,9 +1,10 @@
+<br>
 <em>Datos de los usuarios creados para ingresar al dashboard:</em>
-
+<br>
 <p>DNI: 40123456
 Tipo de Documento: DNI
 Contraseña: contraseña</p>
-
+<br>
 <p>DNI: 20123456
 Tipo de Documento: DNI
 Contraseña: password</p>
