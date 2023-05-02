@@ -75,13 +75,46 @@
         </div>
       </div>
 
-      <div class="tarjeta-2"></div>
+      <div class="tarjeta-2">
+        <div class="add">Agrega una nueva tarjeta</div>
+      </div>
     </div>
 
     <div class="contenedor-abajo">
       <!--BALANCE-->
 
-      <div class="contenedor-balance"></div>
+      <div class="contenedor-balance">
+        <div class="texto-balance">
+          Balance
+
+          <div class="texto-semana">
+            <div class="circ1"></div>
+            Esta semana
+          </div>
+
+          <div class="texto-semana">
+            <div class="circ2"></div>
+            Semana pasada
+          </div>
+        </div>
+        <div class="dias-contenedor" *ngFor="let info of balance.balance">
+          <div class="dias">
+            {{ info.dia }}
+          </div>
+          <div class="contenedor-colores">
+            <div
+              class="color-esta-semana"
+              class="bar-1"
+              [style.width]="info.estaSemana + '%'"
+            ></div>
+            <div
+              class="color-semana-pasada"
+              class="bar-2"
+              [style.width]="info.semanaPasada + '%'"
+            ></div>
+          </div>
+        </div>
+      </div>
 
       <!--TRANSACCIONES-->
 
@@ -90,6 +123,11 @@
         <div
           class="linea-info"
           *ngFor="let info of transacciones.transacciones"
+          [ngClass]="{
+            verde: info.estado === 'Completado',
+            gris: info.estado === 'Pendiente',
+            rojo: info.estado === 'Cancelado'
+          }"
         >
           <div class="transferencia">
             <div class="info-transaccion">

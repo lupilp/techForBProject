@@ -101,3 +101,10 @@
 .link:hover {
   color: #1c4fd8;
 }
+
+.error {
+  font-size: 0.8rem;
+  color: #ff4a55;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}

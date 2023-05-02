@@ -11,7 +11,7 @@ export class LoginComponent {
   user = {
     name: '',
     tipoDocumento: '',
-    numDocumento: 0,
+    numDocumento: '',
     password: '',
   };
 
@@ -28,5 +28,9 @@ export class LoginComponent {
         console.log(err);
       }
     );
+  }
+
+  validarDni() {
+    return this.user.numDocumento.length === 8;
   }
 }

@@ -11,7 +11,7 @@ export class RegisterComponent {
   user = {
     name: '',
     tipoDocumento: '',
-    numDocumento: 0,
+    numDocumento: '',
     password: '',
   };
 
@@ -28,5 +28,13 @@ export class RegisterComponent {
         console.log(err);
       }
     );
+  }
+
+  validarNombre() {
+    return !!this.user.name;
+  }
+
+  validarDni() {
+    return this.user.numDocumento.length === 8;
   }
 }

@@ -17,7 +17,11 @@
             [(ngModel)]="user.name"
             class="selector-input"
             placeholder="¿Cual es tu nombre?"
+            [ngClass]="{ invalid: !validarNombre() }"
           />
+          <div *ngIf="!validarNombre()" class="error">
+            Por favor, ingrese un nombre
+          </div>
         </div>
 
         <div class="selectores">
@@ -37,12 +41,17 @@
         <div class="selectores">
           <label class="labels">Numero de documento:</label>
           <input
-            type="number"
+            type="text"
             name="numDocumento"
             [(ngModel)]="user.numDocumento"
             class="selector-input"
             placeholder="20123456"
+            [ngClass]="{ invalid: !validarDni() }"
+            maxlength="8"
           />
+          <div *ngIf="!validarDni()" class="error">
+            El DNI debe tener 8 numeros
+          </div>
         </div>
 
         <div class="selectores">
