@@ -1,4 +1,5 @@
+const { dbPort } = require("../config/db.config");
 const app = require("./app");
 
-app.listen(3000);
-console.log("server on port", 3000);
+app.listen(dbPort || 3000, "0.0.0.0");
+console.log("server on port", dbPort);
