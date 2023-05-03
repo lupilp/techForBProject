@@ -11,6 +11,8 @@ router.post("/register", userController.registerUser);
 
 router.post("/login", userController.loginUser);
 
+router.get("/", userController.holaMundo);
+
 router.get("/getInfoUser", verifyToken, userController.getInfoUser);
 
 router.get("/getBalance", verifyToken, userController.getBalance);

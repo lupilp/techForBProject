@@ -6,6 +6,10 @@ const User = require("../models/user");
 
 const jwt = require("jsonwebtoken");
 
+userController.holaMundo = async (req, res) => {
+  res.send("hola mundo");
+};
+
 // POST register usuario
 
 userController.registerUser = async (req, res) => {
